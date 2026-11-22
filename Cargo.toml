@@ -1,6 +1,6 @@
 [package]
 name = "smooth-scroll"
-version = "3.0.1"
+version = "1.0.0"
 edition = "2021"
 license = "GPL-3.0-only"
 description = "Exact 1:1 Rust translation of SmajloSlovakian/Minecraft-Smooth-Scrolling (Smooth Scrolling)"
@@ -9,4 +9,5 @@ description = "Exact 1:1 Rust translation of SmajloSlovakian/Minecraft-Smooth-Sc
 path = "src/lib.rs"
 
 [dependencies]
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
 serde_json = { version = "1", features = ["preserve_order"] }

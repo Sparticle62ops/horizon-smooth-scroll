@@ -1,0 +1,13 @@
+id = "smooth_scroll"
+name = "smooth_scroll"
+version = "1.0.0"
+description = "Smooth Scrolling, a native mod: container, chat, creative-screen, entry-list and text-field scrolling animates smoothly instead of stepping. An unofficial, independent port of SmajloSlovakian's Smooth Scrolling (GPL-3.0-only); not affiliated with SmajloSlovakian. No code, assets, textures or lang files from the original Java mod are included.\n\nPorted 1:1: the whole config model (CfgValue, CfgValueBuilder, NewConfig, SmScCfg with the format data corrections), SmoothSc/Globals statics, the menu module, the duck interfaces and TransformationAccess, and the client mixins' logic (hotbar smoothness and rollover, chat and suggestion-window smoothness and speeds, creative-screen smoothness with RP compatibility mode, entry-list smoothness and speed, text-input smoothness, speed and cursor margin, touchpad inertia thresholds, merged-scroll handling). The config fields are Horizon settings (Options > Mods) with the same defaults and ranges; /smoothscroll (short form /ss) reads and writes them.\n\nHonest status: nothing scrolls smoothly in game yet - the client mod API has no mouse-wheel / scroll-event surface for container, creative, chat or entry-list screens, and no text-field cursor surface, so the logic runs its tests and stays unwired until that lands.\n\nLicence: GPL-3.0-only, the upstream license, carried with credit. Source: https://github.com/Sparticle62ops/horizon-smooth-scroll\n"
+authors = ["SmajloSlovakian", "sparticle"]
+api = "0.2"
+side = "client"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "f00125f61f794aaa3d4e950d301f353b35b6ee3d"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
